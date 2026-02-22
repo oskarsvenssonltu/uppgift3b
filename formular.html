@@ -18,6 +18,11 @@
     padding: 0;
     margin: 0;
   }
+
+ /* Tar bort padding från rubrikentexten till ort för att alla rubriker ska få samma vänsterjustering */
+  legend {
+  	padding: 0;
+  }
   
 	</style>
 </head>
@@ -60,6 +65,8 @@
 
 						<!-- Checkbox för ort -->
 		<div>
+
+			      <!-- Använder fieldset för att gruppera radioknapparna, stylingen justeras i CSS för att matcha instruktionerna -->
 					<fieldset>
 								<legend>Tilldela till ort:</legend>
 								<input type="radio" id="gbg" name="ort" value="gbg">
