@@ -5,11 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Supportformulär</title>
 
-	<!-- CSS för mellanrum -->
 	<style>
+
+/* CSS för mellanrum mellan div-arna */
   form div {
     margin-bottom: 12px;
   }
+
+/* Tar bort ramen runt radio knapparna (fieldset) */
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
 	</style>
 </head>
 <body>
@@ -51,18 +60,20 @@
 
 						<!-- Checkbox för ort -->
 		<div>
-						<label for="ort">Tilldela till ort:</label><br>
-						<input type="radio" id="gbg" name="ort" value="gbg">
-						<label for="gbg">Göteborg</label><br>
+					<fieldset>
+								<legend>Tilldela till ort:</legend>
+								<input type="radio" id="gbg" name="ort" value="gbg">
+								<label for="gbg">Göteborg</label><br>
 
-						<input type="radio" id="sthlm" name="ort" value="sthlm">
-						<label for="sthlm">Stockholm</label><br>
+								<input type="radio" id="sthlm" name="ort" value="sthlm">
+								<label for="sthlm">Stockholm</label><br>
 
-						<input type="radio" id="ume" name="ort" value="ume">
-						<label for="ume">Umeå</label><br>
+								<input type="radio" id="ume" name="ort" value="ume">
+								<label for="ume">Umeå</label><br>
 
-						<input type="radio" id="lule" name="ort" value="lule">
-						<label for="lule">Luleå</label>
+								<input type="radio" id="lule" name="ort" value="lule">
+								<label for="lule">Luleå</label>
+					</fieldset>
 		</div>
 
 				<!-- Dropdownlista för kategori -->
